@@ -19,7 +19,7 @@ for cities in random.sample(list(city), 8):
             print "You are correct"
             points +=2
             break
-        elif answer == hint.lower():
+        elif answer == hint:
             print "Hint is " + cities[:1]
             points -= 5
             answer2 = raw_input("Please enter your answer: ")
