@@ -6,7 +6,6 @@ city = {"Zagreb":"Croatia", "Ljubljana":"Slovenia", "Rome":"Italy", "Oslo":"Norw
 name = raw_input("What is your name? ")
 print("Hello, "+name+". You will be completing a quiz that will ask you 8 questions which will test you on capital cities. Try your best at each question and good luck! \nIf you get stuck please enter 'hint' to get the first letter. If you are still lost, enter 'I am lost' for a complete answer.")
 points = 0
-counter = 0
 time.sleep(5)
 
 for cities in random.sample(list(city), 8):
@@ -19,7 +18,6 @@ for cities in random.sample(list(city), 8):
         if cities==answer:
             print "You are correct"
             points +=2
-            counter +=1
             break
         elif answer == hint.lower():
             print "Hint is " + cities[:1]
@@ -28,7 +26,6 @@ for cities in random.sample(list(city), 8):
             if cities==answer2:
                 print "You are correct"
                 points += 2
-                counter += 1
                 break
             else:
                 print "You are wrong, please try again"
